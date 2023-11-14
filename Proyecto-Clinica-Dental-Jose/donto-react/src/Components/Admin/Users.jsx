@@ -16,7 +16,7 @@ function UserList() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:3001/')
+    axios.get('https://backend-lflm.onrender.com/')
       .then((response) => {
         setUsers(response.data);
       })
@@ -30,7 +30,7 @@ function UserList() {
 
   const handleDelete=(id) =>{
 
-    axios.delete('http://localhost:3001/deleteUser/'+id)
+    axios.delete('https://backend-lflm.onrender.com/deleteUser/'+id)
     .then(res=> {console.log(res)
     window.location.reload()
     })

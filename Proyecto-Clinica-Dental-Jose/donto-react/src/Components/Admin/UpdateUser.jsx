@@ -9,7 +9,7 @@ function UpdateUser() {
   const [userData, setUserData] = useState({});
   
   useEffect(() => {
-    axios.get(`http://localhost:3001/getUser/${id}`)
+    axios.get(`https://backend-lflm.onrender.com/getUser/${id}`)
       .then((response) => {
         setUserData(response.data);
         
@@ -22,7 +22,7 @@ function UpdateUser() {
   
   const handleUpdate = () => {
     // Envía una solicitud para actualizar los datos del usuario en el servidor
-    axios.put(`http://localhost:3001/updateUser/${id}`, userData)
+    axios.put(`https://backend-lflm.onrender.com/updateUser/${id}`, userData)
       .then((response) => {
         console.log(response);
         history.push('/Admin/Users'); // Redirige de vuelta a la lista de usuarios

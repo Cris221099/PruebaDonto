@@ -12,7 +12,7 @@ function UpdateFile() {
     const [description, setDescription] = useState();
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/getFile/${id}`)
+        axios.get(`https://backend-lflm.onrender.com/getFile/${id}`)
             .then(result => {console.log(result)
                 setIdentification(result.data.identification);
                 setNames(result.data.names);
@@ -28,7 +28,7 @@ function UpdateFile() {
 
     const Update = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:3001/updateFile/${id}`, { identification, names, lastName, description })
+        axios.put(`https://backend-lflm.onrender.com/updateFile/${id}`, { identification, names, lastName, description })
             .then(result => {
                 history.push('/Admin/DashboardUpdateFile');
                 // Manejar la respuesta o redirigir a una página de éxito
