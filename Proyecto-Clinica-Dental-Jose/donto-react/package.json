@@ -35,11 +35,14 @@
     "react-waypoint": "^9.0.2",
     "recharts": "^2.7.3",
     "slick": "^1.12.2",
-    "sweetalert2": "^11.7.31"
+    "sweetalert2": "^11.7.31",
+    "vite": "^4.5.0",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
