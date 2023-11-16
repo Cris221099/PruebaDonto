@@ -36,7 +36,7 @@
     "recharts": "^2.7.3",
     "slick": "^1.12.2",
     "sweetalert2": "^11.7.31",
-    
+    "vite": "^4.5.0",
     "yarn": "^1.22.19"
   },
   "scripts": {
