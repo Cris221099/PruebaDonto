@@ -12,7 +12,7 @@ import Team from './Components/Page/Team';
 import BlogDetails from './Components/Page/BlogDetails';
 import FooterData from './Components/Data/FooterData';
 import SignIn from './Components/SignIn/signIn';
-import SignUp from './Components/SignUp/signUp';
+import SignUp from './Components/signUp';
 import Dashboard from './Components/Admin/Dashboard';
 import DashboardPatient from './Components/Admin/DashboardPatient';
 import DashboardCreateFile from './Components/Admin/DashboardCreateFile';
@@ -63,7 +63,7 @@ function App() {
         <Route path='/Page/Team' component={Team} />
         <Route path='/Page/Contact' component={Contact} />
         <Route path='/SignIn/signIn' component={SignIn} />
-        <Route path='/SignUp/signUp' component={SignUp} />
+        <Route path='/signUp' component={SignUp} />
         <Route path='/Admin/Users' component={UserList} />
         <Route path='/Admin/UserCreate' component={CreateUser}/>
         <Route path='/Admin/FileCreate' component={FileCreate}/>
